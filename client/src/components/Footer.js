@@ -14,9 +14,9 @@ const Footer = () => {
     return (
     <>
     <footer className="footer" style={{ backgroundColor: '#323338', color: 'white', fontSize: 18}}>
-      <Container>
+      <Container id='footer'>
         <Row>
-          <Col lg={3} sm={12} className="d-flex justify-content-center align-items-center">
+          <Col id="footer-media-clear" lg={3} sm={12} className="d-flex justify-content-center align-items-center">
             <ul className="pages-list d-flex flex-column mt-3" style={{ listStyle: "none", gap: '0.3rem'}}>
               <li><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(SHOP_ROUTE)}>Главная</a></li>
               <li><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(PRODUCTS_ROUTE)}>Товары</a></li>
