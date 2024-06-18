@@ -33,7 +33,7 @@ const Footer = () => {
             <Row>
               <Col sm={6} className="d-flex justify-content-center align-items-center">
                 <div className="contact" style={{ textAlign: 'center'}}>
-                  <p>Номер: +79520253411</p>
+                  <p>Телефон: +79520253411</p>
                   <div className="social-media d-flex" style={{ flexDirection: 'row', gap: '3%', justifyContent: 'center' }}>
                   <a href='https://vk.com/sinister_sensation'>
                     <img src={vk} style={{ width: '35px', height: '35px' }} alt="mainLogo" />
