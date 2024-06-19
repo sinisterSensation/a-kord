@@ -53,8 +53,8 @@ const Services = () => {
 
 	return (
 		<Container
-			className="mt-3 mb-3"
-			style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-evenly" }}
+			className="mt-3 mb-3 servicesMedia"
+			style={{ display: "flex", alignItems: "center", justifyContent: "space-evenly" }}
 		>
 			<div>
 				<Card style={{ width: 300, borderRadius: 5 }} id="goodsCard" className="d-flex align-items-center p-3">

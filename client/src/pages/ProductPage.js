@@ -7,7 +7,7 @@ import { PRODUCTS_ROUTE } from "../utils/consts";
 const ProductPage = () => {
 	const [product, setProduct] = useState({ info: [] });
 	const { id } = useParams();
-    const navigation = useNavigate();
+	const navigation = useNavigate();
 
 	useEffect(() => {
 		fetchOneProduct(id).then((data) => setProduct(data));
@@ -22,7 +22,7 @@ const ProductPage = () => {
 	return (
 		<>
 			<h2 id="cardName">Карточка товара</h2>
-			<Container id="productCard">
+			<Container id="productCard" className="mt-5 ">
 				<Col md={3}>
 					<Image
 						src={process.env.REACT_APP_API_URL + product.img}
@@ -45,12 +45,12 @@ const ProductPage = () => {
 						<div>4 шт. - {product.price * 4 + " ₽"}</div>
 						<Button
 							id="productPagebtn"
-							className="mt-3 align-self-center btn"
+							className="mt-4 align-self-center btn"
 							variant="outline-light"
 							style={{ background: "#5C5C5C" }}
 							type="submit"
 							onClickCapture={addToCart}
-                            onClick={() => navigation(PRODUCTS_ROUTE)}
+							onClick={() => navigation(PRODUCTS_ROUTE)}
 						>
 							Добавить в корзину
 						</Button>

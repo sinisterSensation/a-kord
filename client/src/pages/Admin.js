@@ -8,8 +8,12 @@ const Admin = () => {
 	const [brandVisible, setBrandVisible] = useState(false);
 	const [typeVisible, setTypeVisible] = useState(false);
 	const [productVisible, setProductVisible] = useState(false);
-
 	const [serviceEntries, setServiceEntries] = useState([]);
+
+	const clear = () => {
+		localStorage.removeItem("serviceEntries");
+		setServiceEntries([]);
+	}
 
 	useEffect(() => {
 		const entries = JSON.parse(localStorage.getItem("serviceEntries")) || [];
@@ -84,8 +88,23 @@ const Admin = () => {
 					))}
 				</tbody>
 			</Table>
+			<Button
+				variant="outline-light"
+				onClick={() => clear()}
+				className="mt-3 p-2 mb-5"
+				style={{
+					boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+					background: "#5C5C5C",
+					border: "0.5px solid #FFF",
+					borderRadius: "7px",
+				}}
+				type="submit"
+			>
+				Очистить список
+			</Button>
 		</Container>
 	);
 };
 
 export default Admin;
+

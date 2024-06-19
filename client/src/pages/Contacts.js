@@ -3,10 +3,10 @@ import { Card, Container } from "react-bootstrap";
 
 const Contacts = () => {
 	return (
-		<Container style={{ marginTop: 90 }}>
+		<Container style={{ marginTop: 90 }} className="contactsContainer">
 			<h2 style={{ marginLeft: 30 }}>Контакты</h2>
 			<Card
-				id="contacts-media"
+				id="contactsMedia"
 				style={{ background: "rgb(50, 51, 56)", borderRadius: 14 }}
 				className="mt-4 d-flex justify-content-around align-items-center flex-row p-5"
 			>

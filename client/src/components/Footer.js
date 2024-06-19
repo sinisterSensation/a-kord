@@ -18,15 +18,15 @@ const Footer = () => {
         <Row>
           <Col id="footer-media-clear" lg={3} sm={12} className="d-flex justify-content-center align-items-center">
             <ul className="pages-list d-flex flex-column mt-3" style={{ listStyle: "none", gap: '0.3rem'}}>
-              <li><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(SHOP_ROUTE)}>Главная</a></li>
-              <li><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(PRODUCTS_ROUTE)}>Товары</a></li>
-              <li><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(SIGNUPSERVICE_ROUTE)}>Записаться</a></li>
+              <li className="footerMediaClear"><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(SHOP_ROUTE)}>Главная</a></li>
+              <li className="footerMediaClear"><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(PRODUCTS_ROUTE)}>Товары</a></li>
+              <li className="footerMediaClear"><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(SIGNUPSERVICE_ROUTE)}>Записаться</a></li>
             </ul>
           </Col>
           <Col lg={3} sm={12} className="d-flex justify-content-center align-items-center">
             <ul className="pages-list d-flex flex-column mt-3" style={{ listStyle: "none", gap: '0.3rem' }}>
-              <li><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(SERVICES_ROUTE)}>Виды услуг</a></li>
-              <li><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(CONTACTS_ROUTE)}>Контакты</a></li>
+              <li className="footerMediaClear"><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(SERVICES_ROUTE)}>Виды услуг</a></li>
+              <li className="footerMediaClear"><a style={{ textDecoration: "none", color: "white", cursor: 'pointer' }} onClick={() => navigation(CONTACTS_ROUTE)}>Контакты</a></li>
             </ul>
           </Col>
           <Col lg={6} sm={12}>

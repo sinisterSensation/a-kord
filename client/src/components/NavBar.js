@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Context } from "..";
-import { Navbar, Nav, Button, Form, FormControl } from "react-bootstrap";
+import { Navbar, Nav, Button } from "react-bootstrap";
 import logo from "../img/logo.svg";
-import search from "../img/search.svg";
+
 import {
 	BASKET_ROUTE,
 	CONTACTS_ROUTE,
@@ -31,40 +31,8 @@ const NavBar = observer(() => {
 				<Navbar.Brand href="#" onClick={() => navigation(SHOP_ROUTE)}>
 					<img src={logo} style={{ width: "140px", height: "35px" }} alt="mainLogo" />
 				</Navbar.Brand>
-				<Navbar.Toggle aria-controls="navbarSupportedContent" />
 				<Navbar.Collapse id="navbarSupportedContent" className="d-flex flex-column">
-					<div style={{ marginTop: "15px" }}>
-						<Form className="d-flex" role="search">
-							<FormControl
-								id="search-media"
-								type="search"
-								placeholder="Найти"
-								aria-label="Search"
-								style={{
-									marginRight: "3px !important",
-									borderRadius: "7px 0px 0px 7px",
-									width: "55rem",
-									border: "transparent",
-									outline: "#FFFFFF",
-									boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset",
-								}}
-							/>
-							<Button
-								id="search-btn-media"
-								variant="outline-none"
-								style={{
-									boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-									background: "#5C5C5C",
-									borderRadius: "0px 7px 7px 0px",
-									color: "white",
-								}}
-								type="submit"
-							>
-								<img style={{ width: "22px" }} src={search} alt="search-logo" />
-							</Button>
-						</Form>
-					</div>
-					<div id="nav-list-media">
+					<div id="nav-list-media" className="nav-list-media">
 						{user.isAuth ? (
 							<Nav className="me-auto mb-2 mb-lg-0" style={{ gap: "50px" }}>
 								<Nav.Item>
